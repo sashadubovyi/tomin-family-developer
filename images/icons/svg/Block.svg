@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 52L2 62L58.0005 62V52L62.0005 48.4706V43.5294L58.0005 40L58.0005 24L62.0005 20.4706V15.5294L58.0005 12V2L2 2L2 12L6 15.5294L6 20.8235L2 24.3529L2 39.6471L6 43.1765L6 48.4706L2 52Z" stroke="#141414" stroke-linejoin="bevel"/>
+<rect x="24" y="8" width="28" height="10" stroke="#141414" stroke-linejoin="bevel"/>
+<rect x="12" y="8" width="8" height="10" stroke="#141414" stroke-linejoin="bevel"/>
+<rect x="40" y="37" width="28" height="10" transform="rotate(-180 40 37)" stroke="#141414" stroke-linejoin="bevel"/>
+<rect x="24" y="44" width="28" height="12" stroke="#141414" stroke-linejoin="bevel"/>
+<rect x="52" y="37" width="8" height="10" transform="rotate(-180 52 37)" stroke="#141414" stroke-linejoin="bevel"/>
+<rect x="12" y="44" width="8" height="12" stroke="#141414" stroke-linejoin="bevel"/>
+</svg>

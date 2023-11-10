@@ -1,0 +1,7 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M40 12L37 9L34 12" stroke="#141414" stroke-linejoin="bevel"/>
+<path d="M24 9L27 12L30 9" stroke="#141414" stroke-linejoin="bevel"/>
+<path d="M62 2H2V62H13V19H51V62H62V2Z" stroke="#141414" stroke-linejoin="bevel"/>
+<path d="M13 59H51" stroke="#141414" stroke-linejoin="bevel"/>
+<path d="M32 19L32 59" stroke="#141414" stroke-linejoin="bevel"/>
+</svg>

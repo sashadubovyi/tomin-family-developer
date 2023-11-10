@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container headerContainer">
+        <div class="navList">
+          <a class="logo" href="./index.html">
+            <svg
+              class="companyLogo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 168 20"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_808_877)">
+                <path d="M8.22995 11.3789H0V19.6614H8.22995V11.3789Z" />
+                <path d="M25.2369 0.335938H0V8.38955H25.2369V0.335938Z" />
+                <path d="M25.2373 11.3789H11.2031V19.6614H25.2373V11.3789Z" />
+                <path
+                  d="M63.5289 18.7425C63.0925 19.1301 62.8589 19.3116 62.6807 19.4415C62.6028 19.5198 62.527 19.5714 62.4758 19.5961H56.3008C56.5323 19.4147 56.8417 19.1817 57.2002 18.8703C57.8169 18.3528 58.7696 17.5755 60.1074 16.4373C58.3332 14.5734 57.8947 12.1652 57.8947 10.3012V9.52393C57.8947 5.6662 59.798 -0.00390625 70.6545 -0.00390625H71.6584C74.6435 -0.00390625 76.9074 0.410527 78.6817 1.1095C79.0668 0.82496 79.2471 0.616712 79.4274 0.488877C79.5053 0.410527 79.5811 0.35898 79.6323 0.334238H85.7807C85.7028 0.412589 84.6743 1.18785 82.1789 3.33836C83.9532 5.20228 84.4162 7.55898 84.4162 9.52599V10.3033C84.4162 14.0827 82.6153 19.9342 71.6564 19.9342H70.6525C67.6428 19.9342 65.3011 19.4683 63.5268 18.7425H63.5289ZM65.8706 11.959L73.7175 5.56517C73.0741 5.46207 72.2505 5.38372 71.1442 5.38372C66.3337 5.38372 65.5367 7.92187 65.5367 9.68063V9.94042C65.5367 10.6394 65.6391 11.3116 65.8706 11.959ZM76.7517 9.94042V9.68063C76.7517 8.98166 76.6739 8.33424 76.5202 7.78991L68.6734 14.159C69.2901 14.2621 70.0624 14.3136 71.1688 14.3136C75.9015 14.3136 76.7517 11.7507 76.7517 9.93836V9.94042Z"
+                />
+                <path
+                  d="M33.2031 6.54625V0.335938H56.6658V6.54625H48.9828V19.5978H40.8983V6.54625H33.2031Z"
+                />
+                <path d="M136.384 0.335938H128.537V19.5978H136.384V0.335938Z" />
+                <path
+                  d="M108.959 0.335938L106.309 15.4225H105.342L102.693 0.335938H87.3828V19.5978H95.1067V4.51326H96.3995L99.0486 19.5978H112.603L115.252 4.51326H116.559V19.5978H124.283V0.335938H108.959Z"
+                />
+                <path
+                  d="M160.141 0.335938V15.4225H158.838L155.871 0.335938H140.637V19.5978H148.361V4.51326H149.666L152.634 19.5978H167.865V0.335938H160.141Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_808_877">
+                  <rect width="168" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <ul class="headerInfoContactsList">
+            <li>
+              <button class="navLink projectOpenBtn">
+                Проекти
+                <svg
+                  class="toggleIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L5 5L9 1"
+                    stroke-width="2"
+                    stroke-linejoin="bevel"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="hiddenItemsHeader">
+              <a href="./developer.html">Про забудовника</a>
+            </li>
+            <li class="hiddenItemsHeader">
+              <a href="./agency.html">Агенція</a>
+            </li>
+            <li class="hiddenItemsHeader">
+              <a href="/contacts.html">Контакти</a>
+            </li>
+          </ul>
+          <div class="hiddenItemsHeader phoneOpenBtn">
+            <a class="footerLink" href="tel:+380557997899">
+              38 (055) 799 78 99
+            </a>
+            <button class="navLink">
+              <svg
+                class="toggleIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="6"
+                viewBox="0 0 10 6"
+                fill="none"
+              >
+                <path
+                  d="M1 1L5 5L9 1"
+                  stroke-width="2"
+                  stroke-linejoin="bevel"
+                />
+              </svg>
+            </button>
+
+            <div class="phoneModalContainer">
+              <a class="phoneModalText" href="tel: +380637907899">
+                38 (063) 790 78 99
+              </a>
+              <a class="phoneModalText" href="tel: +380637907899">
+                38 (093) 790 78 99
+              </a>
+              <a class="phoneModalText" href="tel: +380637907899">
+                38 (055) 790 78 99
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navigationMenuBtn">
+          <div class="navContainer">
+            <div class="headerBtn">
+              <button class="menuBtn">
+                <svg
+                  class="menuBtnSvg"
+                  width="40"
+                  height="10"
+                  viewBox="0 0 40 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M40 0H0V2H40V0Z" />
+                  <path d="M40 8H0V10H40V8Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="pageNavigation withPaddings">
+          <a class="prevPage" href="/index.html">Головна</a>
+          <span class="currentPage">/</span>
+          <a class="currentPage" href="/blog.html">Блог</a>
+          <span class="currentPage">/</span>
+          <a class="currentBlogPage" href="/blogPage.html"
+            >Зустріч інвесторів із забудовником</a
+          >
+        </div>
+
+        <div class="blogPageContainer">
+          <div class="blogPageTitleContainer withPaddings">
+            <a href="./blog.html" class="backLinkOrange">Назад до статтей</a>
+          </div>
+
+          <div class="pageTextContainer">
+            <h2 class="blogPageTitle">Зустріч інвесторів із забудовником</h2>
+            <div class="blogNewsTextContainer">
+              <p class="blogNewsText">НОВИНИ</p>
+              <p class="blogNewsText">01.02.2023</p>
+            </div>
+
+            <picture>
+              <source
+                srcset="./images/blogPage/blogPageMob.jpg"
+                media="(max-width: 375px)"
+                class="blogPageImg"
+              />
+              <source
+                srcset="./images/blogPage/blogPageTab.jpg"
+                media="(max-width: 768px)"
+                class="blogPageImg"
+              />
+              <img
+                src="./images/blogPage/blogPageDesc.jpg"
+                class="blogPageImg"
+              />
+            </picture>
+
+            <ul class="blogPageNewsList withPaddings">
+              <li class="blogPageNewsItem">
+                <h3 class="blogPageNewsTitle">Підзаголовок</h3>
+              </li>
+              <li class="blogPageNewsItem">
+                <span class="orangeDot"></span>
+                <p class="blogPageNewsText">
+                  Графічні та друкарські оператори це добре знають.
+                </p>
+              </li>
+              <li class="blogPageNewsItem">
+                <span class="orangeDot"></span>
+                <p class="blogPageNewsText">
+                  Насправді всі професії, що займаються всесвітом спілкування.
+                </p>
+              </li>
+              <li class="blogPageNewsItem">
+                <span class="orangeDot"></span>
+                <p class="blogPageNewsText">
+                  Мають стабільний зв'язок із цими словами, але що це таке?
+                </p>
+              </li>
+              <li class="blogPageNewsItem">
+                <span class="orangeDot"></span>
+                <p class="blogPageNewsText">
+                  Lorem ipsum - це фіктивний текст без будь -якого сенсу.
+                </p>
+              </li>
+            </ul>
+            <p class="blogPageNewsText withPaddings">
+              Це послідовність латинських слів, які, як вони розташовані, не
+              формуйте речень із повним змістом, а дайте життя тестовому тексту,
+              корисному заповнити пробіли, які згодом будуть зайняті з текстів
+              ad hoc, складених професіоналами у сфері комунікацій. Це,
+              безумовно, найвідоміший текст — заповнювач навіть якщо є різні
+              версії, що відрізняються від того, в якому порядку повторюються
+              латинські слова.
+            </p>
+
+            <div class="video-container">
+              <video
+                class="video"
+                src="https://tomin-family.icecream.promo/wp-content/uploads/2023/03/Homepage3.mp4"
+                controls
+                poster="./images/blogPage/poster.jpg"
+              ></video>
+              <button class="play-button">
+                <svg
+                  class="videoSvg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                >
+                  <g filter="url(#filter0_b_510_7132)">
+                    <circle
+                      cx="40"
+                      cy="40"
+                      r="40"
+                      fill="rgba(255, 255, 255, 0.1)"
+                      fill-opacity="1"
+                    />
+                  </g>
+                  <path d="M53 40L33 52L33 28L53 40Z" fill="white" />
+                  <defs>
+                    <filter
+                      id="filter0_b_510_7132"
+                      x="-10"
+                      y="-10"
+                      width="100"
+                      height="100"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feGaussianBlur
+                        in="BackgroundImageFix"
+                        stdDeviation="5"
+                      />
+                      <feComposite
+                        in2="SourceAlpha"
+                        operator="in"
+                        result="effect1_backgroundBlur_510_7132"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_backgroundBlur_510_7132"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+
+            <p class="blogPageNewsText withPaddings">
+              Lorem ipsum містить шрифти, які більше використовуються, аспект
+              що дозволяє мати огляд рендерингу тексту з точки зору вибору
+              шрифту an d розмір шрифту. Коли йдеться про Lorem ipsum,
+              використовуються різні вирази, а саме текст заповнення, вигаданий
+              текст, сліпий текст або текст — заповнювач: коротше, його значення
+              також може бути нульовим, але його корисність настільки ясна,
+              що він проходить через століття і протистоїть іронічним
+              та сучасним версіям, які з’явилися з появою Інтернету.
+            </p>
+
+            <div class="blogPageSwiperContainer">
+              <div class="secondProjectSwiper">
+                <div class="swiper blogPageSwiper">
+                  <div class="swiper-wrapper blogPageWrapper">
+                    <div class="swiper-slide blogPageSlide">
+                      <picture>
+                        <source
+                          srcset="./images/blogPage/blogSwiperMob.jpg"
+                          media="(max-width: 375px)"
+                          class="secondSwiperImg"
+                        />
+                        <source
+                          srcset="./images/blogPage/blogSwiperTab.jpg"
+                          media="(max-width: 768px)"
+                          class="secondSwiperImg"
+                        />
+                        <img
+                          src="./images/blogPage/blogSwiperDesc.jpg"
+                          class="secondSwiperImg"
+                        />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide blogPageSlide">
+                      <picture>
+                        <source
+                          srcset="./images/blogPage/blogSwiperMob.jpg"
+                          media="(max-width: 375px)"
+                          class="secondSwiperImg"
+                        />
+                        <source
+                          srcset="./images/blogPage/blogSwiperTab.jpg"
+                          media="(max-width: 768px)"
+                          class="secondSwiperImg"
+                        />
+                        <img
+                          src="./images/blogPage/blogSwiperDesc.jpg"
+                          class="secondSwiperImg"
+                        />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide blogPageSlide">
+                      <picture>
+                        <source
+                          srcset="./images/blogPage/blogSwiperMob.jpg"
+                          media="(max-width: 375px)"
+                          class="secondSwiperImg"
+                        />
+                        <source
+                          srcset="./images/blogPage/blogSwiperTab.jpg"
+                          media="(max-width: 768px)"
+                          class="secondSwiperImg"
+                        />
+                        <img
+                          src="./images/blogPage/blogSwiperDesc.jpg"
+                          class="secondSwiperImg"
+                        />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide blogPageSlide">
+                      <picture>
+                        <source
+                          srcset="./images/blogPage/blogSwiperMob.jpg"
+                          media="(max-width: 375px)"
+                          class="secondSwiperImg"
+                        />
+                        <source
+                          srcset="./images/blogPage/blogSwiperTab.jpg"
+                          media="(max-width: 768px)"
+                          class="secondSwiperImg"
+                        />
+                        <img
+                          src="./images/blogPage/blogSwiperDesc.jpg"
+                          class="secondSwiperImg"
+                        />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide blogPageSlide">
+                      <picture>
+                        <source
+                          srcset="./images/blogPage/blogSwiperMob.jpg"
+                          media="(max-width: 375px)"
+                          class="secondSwiperImg"
+                        />
+                        <source
+                          srcset="./images/blogPage/blogSwiperTab.jpg"
+                          media="(max-width: 768px)"
+                          class="secondSwiperImg"
+                        />
+                        <img
+                          src="./images/blogPage/blogSwiperDesc.jpg"
+                          class="secondSwiperImg"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination blogPagePagination"></div>
+
+                  <div class="swiper-button-prev blogPageButtonPrev">
+                    <svg
+                      class="arrLeft"
+                      width="42"
+                      height="22"
+                      viewBox="0 0 42 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M41 11L1 11L11 1"
+                        stroke-width="2"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next blogPageButtonNext">
+                    <svg
+                      class="arrRight"
+                      width="42"
+                      height="22"
+                      viewBox="0 0 42 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L41 11L31 21"
+                        stroke-width="2"
+                        stroke-linejoin="bevel"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="blogPageNewsText withPaddings">
+              Коли йдеться про Lorem ipsum, використовуються різні вирази,
+              а саме текст заповнення, вигаданий текст, сліпий текст або текст —
+              заповнювач: коротше, його значення також може бути нульовим,
+              але його корисність настільки ясна, що він проходить
+              через століття і протистоїть іронічним та сучасним версіям, які
+              з’явилися з появою Інтернету.
+            </p>
+            <p class="blogPageNewsText withPaddings">
+              Це послідовність латинських слів, які, як вони розташовані,
+              не формуйте речень із повним змістом, а дайте життя тестовому
+              тексту, корисному заповнити пробіли, які згодом будуть зайняті
+              з текстів ad hoc, складених професіоналами у сфері комунікацій.
+              Це, безумовно, найвідоміший текст — заповнювач навіть якщо є різні
+              версії, що відрізняються від того, в якому порядку повторюються
+              латинські слова.
+            </p>
+
+            <div class="resendContainer">
+              <h3>Поділитись:</h3>
+
+              <svg
+                class="footerLogo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
+                />
+              </svg>
+
+              <svg
+                class="footerLogo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M22.4591 6C21.6891 6.35 20.8591 6.58 19.9991 6.69C20.8791 6.16 21.5591 5.32 21.8791 4.31C21.0491 4.81 20.1291 5.16 19.1591 5.36C18.3691 4.5 17.2591 4 15.9991 4C13.6491 4 11.7291 5.92 11.7291 8.29C11.7291 8.63 11.7691 8.96 11.8391 9.27C8.27906 9.09 5.10906 7.38 2.99906 4.79C2.62906 5.42 2.41906 6.16 2.41906 6.94C2.41906 8.43 3.16906 9.75 4.32906 10.5C3.61906 10.5 2.95906 10.3 2.37906 10V10.03C2.37906 12.11 3.85906 13.85 5.81906 14.24C5.18979 14.4122 4.52916 14.4362 3.88906 14.31C4.16067 15.1625 4.6926 15.9084 5.41008 16.4429C6.12756 16.9775 6.99451 17.2737 7.88906 17.29C6.37269 18.4904 4.49306 19.1393 2.55906 19.13C2.21906 19.13 1.87906 19.11 1.53906 19.07C3.43906 20.29 5.69906 21 8.11906 21C15.9991 21 20.3291 14.46 20.3291 8.79C20.3291 8.6 20.3291 8.42 20.3191 8.23C21.1591 7.63 21.8791 6.87 22.4591 6Z"
+                />
+              </svg>
+
+              <svg
+                class="footerLogo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M17.5481 1.00458L14.6699 1C11.4362 1 9.34653 3.12509 9.34653 6.41423V8.91055H6.45258C6.20251 8.91055 6 9.1115 6 9.35937V12.9763C6 13.2241 6.20274 13.4249 6.45258 13.4249H9.34653V22.5514C9.34653 22.7993 9.54904 23 9.79911 23H13.5749C13.825 23 14.0275 22.799 14.0275 22.5514V13.4249H17.4112C17.6613 13.4249 17.8638 13.2241 17.8638 12.9763L17.8652 9.35937C17.8652 9.24036 17.8174 9.12638 17.7326 9.04215C17.6479 8.95793 17.5324 8.91055 17.4123 8.91055H14.0275V6.79439C14.0275 5.77727 14.272 5.26094 15.6087 5.26094L17.5477 5.26025C17.7975 5.26025 18 5.0593 18 4.81166V1.45317C18 1.20576 17.7977 1.00504 17.5481 1.00458Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="otherNewsSection withPaddings">
+          <div class="titleBox blogPageTitleBox">
+            <h2 class="titleWithLine plogPageTitleWithLine">Інші новини</h2>
+            <span class="titleLine line"></span>
+          </div>
+
+          <div class="descBlogContainer">
+            <div>
+              <div class="blogListContainer">
+                <ul class="blogList">
+                  <li>
+                    <a href="/blogPage.html" class="blogLink">
+                      <img src="./images/blog/blog1.jpg" alt="blog" />
+                      <div class="blogContainerText">
+                        <div class="newsBox">
+                          <p class="newsText">НОВИНИ</p>
+                          <p class="newsText">01.02.2023</p>
+                        </div>
+                        <p class="newsTitle">
+                          Розстрочка на 6 місяців <br />без удороження
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/blogPage.html" class="blogLink">
+                      <img src="./images/blog/blog2.jpg" alt="blog" />
+                      <div class="blogContainerText">
+                        <div class="newsBox">
+                          <p class="newsText">НОВИНИ</p>
+                          <p class="newsText">01.02.2023</p>
+                        </div>
+                        <p class="newsTitle">
+                          Зустріч інвесторів <br />із забудовником
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/blogPage.html" class="blogLink">
+                      <img src="./images/blog/blog3.jpg" alt="blog" />
+                      <div class="blogContainerText">
+                        <div class="newsBox">
+                          <p class="newsText">НОВИНИ</p>
+                          <p class="newsText">01.02.2023</p>
+                        </div>
+                        <p class="newsTitle">
+                          Старт продажів третьої черги<br />
+                          ЖК ЮТЛАНДІЯ
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container preViewContainer">
+        <picture>
+          <source
+            srcset="./images/preView/preViewMob.jpg"
+            media="(max-width: 375px)"
+            class="preViewImg"
+          />
+          <source
+            srcset="./images/preView/preViewTab.jpg"
+            media="(max-width: 768px)"
+            class="preViewImg"
+          />
+          <img
+            src="./images/preView/preViewDesc.jpg"
+            class="preViewImg"
+            alt="image"
+          />
+        </picture>
+        <div class="preViewBox">
+          <div class="preViewTitleBox">
+            <p class="preViewTitle">Tomin Family</p>
+            <p class="preViewTitle">
+              Development — будинки, для класного життя
+            </p>
+          </div>
+
+          <div class="preViewBtn popupOpenBtn">
+            <span class="leftSideBtn"></span>ЗАПИС НА ПЕРЕГЛЯД<span
+              class="rightSideBtn"
+            ></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footerContainer">
+        <a class="logo" href="./index.html">
+          <svg
+            class="companyLogo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 168 20"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_808_877)">
+              <path d="M8.22995 11.3789H0V19.6614H8.22995V11.3789Z" />
+              <path d="M25.2369 0.335938H0V8.38955H25.2369V0.335938Z" />
+              <path d="M25.2373 11.3789H11.2031V19.6614H25.2373V11.3789Z" />
+              <path
+                d="M63.5289 18.7425C63.0925 19.1301 62.8589 19.3116 62.6807 19.4415C62.6028 19.5198 62.527 19.5714 62.4758 19.5961H56.3008C56.5323 19.4147 56.8417 19.1817 57.2002 18.8703C57.8169 18.3528 58.7696 17.5755 60.1074 16.4373C58.3332 14.5734 57.8947 12.1652 57.8947 10.3012V9.52393C57.8947 5.6662 59.798 -0.00390625 70.6545 -0.00390625H71.6584C74.6435 -0.00390625 76.9074 0.410527 78.6817 1.1095C79.0668 0.82496 79.2471 0.616712 79.4274 0.488877C79.5053 0.410527 79.5811 0.35898 79.6323 0.334238H85.7807C85.7028 0.412589 84.6743 1.18785 82.1789 3.33836C83.9532 5.20228 84.4162 7.55898 84.4162 9.52599V10.3033C84.4162 14.0827 82.6153 19.9342 71.6564 19.9342H70.6525C67.6428 19.9342 65.3011 19.4683 63.5268 18.7425H63.5289ZM65.8706 11.959L73.7175 5.56517C73.0741 5.46207 72.2505 5.38372 71.1442 5.38372C66.3337 5.38372 65.5367 7.92187 65.5367 9.68063V9.94042C65.5367 10.6394 65.6391 11.3116 65.8706 11.959ZM76.7517 9.94042V9.68063C76.7517 8.98166 76.6739 8.33424 76.5202 7.78991L68.6734 14.159C69.2901 14.2621 70.0624 14.3136 71.1688 14.3136C75.9015 14.3136 76.7517 11.7507 76.7517 9.93836V9.94042Z"
+              />
+              <path
+                d="M33.2031 6.54625V0.335938H56.6658V6.54625H48.9828V19.5978H40.8983V6.54625H33.2031Z"
+              />
+              <path d="M136.384 0.335938H128.537V19.5978H136.384V0.335938Z" />
+              <path
+                d="M108.959 0.335938L106.309 15.4225H105.342L102.693 0.335938H87.3828V19.5978H95.1067V4.51326H96.3995L99.0486 19.5978H112.603L115.252 4.51326H116.559V19.5978H124.283V0.335938H108.959Z"
+              />
+              <path
+                d="M160.141 0.335938V15.4225H158.838L155.871 0.335938H140.637V19.5978H148.361V4.51326H149.666L152.634 19.5978H167.865V0.335938H160.141Z"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_808_877">
+                <rect width="168" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+
+        <ul class="footerLinkList">
+          <li>
+            <a class="footerLink" href="./developer.html">Про забудовника</a>
+          </li>
+          <li><a class="footerLink" href="./repair.html">Ремонти</a></li>
+          <li><a class="footerLink" href="/blog.html">Блог</a></li>
+          <li><a class="footerLink" href="/">Обслуговування</a></li>
+          <li><a class="footerLink" href="./team.html">Команда</a></li>
+          <li><a class="footerLink" href="./tenders.html">Тендери</a></li>
+          <li><a class="footerLink" href="./agency.html">Агенція</a></li>
+          <li><a class="footerLink" href="/contacts.html">Контакти</a></li>
+        </ul>
+
+        <div class="footerProjectBox">
+          <p class="footerTitle">ПРОЕКТИ</p>
+          <ul class="footerProjectList">
+            <li><a class="footerLink" href="./project.html">Utlandia</a></li>
+            <li><a class="footerLink" href="./project.html">Utlandia 2</a></li>
+            <li><a class="footerLink" href="./project.html">Utlandia 2+</a></li>
+            <li><a class="footerLink" href="./project.html">Utlandia 3</a></li>
+            <li><a class="footerLink" href="./project.html">Utlandia 4</a></li>
+            <li><a class="footerLink" href="./project.html">Utlandia 5</a></li>
+          </ul>
+        </div>
+
+        <div class="footerAddressBox">
+          <p class="footerTitle">ВІДДІЛ ПРОДАЖІВ</p>
+          <address>
+            <ul class="footerAddressList">
+              <li class="addressItem">
+                <a class="footerLink" href="/"> м. Ірпінь, вул. Соборна, 1Г </a>
+              </li>
+              <li class="emailItem">
+                <a class="footerLink" href="mailto:info@tomin.family">
+                  info@tomin.family
+                </a>
+              </li>
+              <li class="footerPhones">
+                <a class="footerLink" href="tel:+380557997899">
+                  38 (055) 799 78 99
+                </a>
+                <a class="footerLink" href="tel:+380637997899">
+                  38 (063) 799 78 99
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footerSocial">
+          <div class="footerSocialLinks">
+            <a href="/">
+              <svg
+                class="footerLogo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21.9804 7.88005C21.9336 6.81738 21.7617 6.0868 21.5156 5.45374C21.2616 4.78176 20.8709 4.18014 20.359 3.68002C19.8589 3.1721 19.2533 2.77743 18.5891 2.52745C17.9524 2.28127 17.2256 2.10943 16.163 2.06257C15.0923 2.01175 14.7525 2 12.0371 2C9.32172 2 8.98185 2.01175 7.9152 2.05861C6.85253 2.10546 6.12195 2.27746 5.48904 2.52348C4.81692 2.77743 4.2153 3.16814 3.71517 3.68002C3.20726 4.18014 2.81274 4.78573 2.5626 5.44992C2.31643 6.0868 2.14458 6.81341 2.09773 7.87609C2.04691 8.9467 2.03516 9.28658 2.03516 12.002C2.03516 14.7173 2.04691 15.0572 2.09376 16.1239C2.14061 17.1865 2.31261 17.9171 2.55879 18.5502C2.81274 19.2221 3.20726 19.8238 3.71517 20.3239C4.2153 20.8318 4.82088 21.2265 5.48507 21.4765C6.12195 21.7226 6.84856 21.8945 7.91139 21.9413C8.97788 21.9883 9.31791 21.9999 12.0333 21.9999C14.7486 21.9999 15.0885 21.9883 16.1552 21.9413C17.2178 21.8945 17.9484 21.7226 18.5813 21.4765C19.9254 20.9568 20.9881 19.8941 21.5078 18.5502C21.7538 17.9133 21.9258 17.1865 21.9726 16.1239C22.0195 15.0572 22.0312 14.7173 22.0312 12.002C22.0312 9.28658 22.0273 8.9467 21.9804 7.88005ZM20.1794 16.0457C20.1364 17.0225 19.9723 17.5499 19.8355 17.9015C19.4995 18.7728 18.808 19.4643 17.9367 19.8004C17.585 19.9372 17.0538 20.1012 16.0808 20.1441C15.026 20.1911 14.7096 20.2027 12.0411 20.2027C9.37255 20.2027 9.0522 20.1911 8.00113 20.1441C7.02437 20.1012 6.49693 19.9372 6.1453 19.8004C5.71171 19.6402 5.31704 19.3862 4.9967 19.0541C4.6646 18.7298 4.41065 18.3391 4.2504 17.9055C4.11365 17.5539 3.94959 17.0225 3.9067 16.0497C3.8597 14.9948 3.8481 14.6783 3.8481 12.0097C3.8481 9.34122 3.8597 9.02087 3.9067 7.96995C3.94959 6.99319 4.11365 6.46575 4.2504 6.11412C4.41065 5.68038 4.6646 5.28586 5.00067 4.96536C5.32483 4.63327 5.71553 4.37931 6.14927 4.21921C6.5009 4.08247 7.03231 3.9184 8.00509 3.87537C9.05999 3.82851 9.37652 3.81676 12.0449 3.81676C14.7174 3.81676 15.0337 3.82851 16.0848 3.87537C17.0616 3.9184 17.589 4.08247 17.9406 4.21921C18.3742 4.37931 18.7689 4.63327 19.0892 4.96536C19.4213 5.28967 19.6753 5.68038 19.8355 6.11412C19.9723 6.46575 20.1364 6.99701 20.1794 7.96995C20.2262 9.02484 20.238 9.34122 20.238 12.0097C20.238 14.6783 20.2262 14.9908 20.1794 16.0457Z"
+                />
+                <path
+                  d="M12.0371 6.86423C9.20069 6.86423 6.89937 9.1654 6.89937 12.002C6.89937 14.8385 9.20069 17.1397 12.0371 17.1397C14.8736 17.1397 17.1748 14.8385 17.1748 12.002C17.1748 9.1654 14.8736 6.86423 12.0371 6.86423ZM12.0371 15.3347C10.197 15.3347 8.70438 13.8422 8.70438 12.002C8.70438 10.1617 10.197 8.66924 12.0371 8.66924C13.8774 8.66924 15.3698 10.1617 15.3698 12.002C15.3698 13.8422 13.8774 15.3347 12.0371 15.3347Z"
+                />
+                <path
+                  d="M18.5776 6.6611C18.5776 7.32346 18.0405 7.86053 17.378 7.86053C16.7156 7.86053 16.1785 7.32346 16.1785 6.6611C16.1785 5.99858 16.7156 5.46167 17.378 5.46167C18.0405 5.46167 18.5776 5.99858 18.5776 6.6611Z"
+                />
+              </svg>
+            </a>
+            <a href="/">
+              <svg
+                class="footerLogo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M10 15L15.19 12L10 9V15ZM21.56 7.17C21.69 7.64 21.78 8.27 21.84 9.07C21.91 9.87 21.94 10.56 21.94 11.16L22 12C22 14.19 21.84 15.8 21.56 16.83C21.31 17.73 20.73 18.31 19.83 18.56C19.36 18.69 18.5 18.78 17.18 18.84C15.88 18.91 14.69 18.94 13.59 18.94L12 19C7.81 19 5.2 18.84 4.17 18.56C3.27 18.31 2.69 17.73 2.44 16.83C2.31 16.36 2.22 15.73 2.16 14.93C2.09 14.13 2.06 13.44 2.06 12.84L2 12C2 9.81 2.16 8.2 2.44 7.17C2.69 6.27 3.27 5.69 4.17 5.44C4.64 5.31 5.5 5.22 6.82 5.16C8.12 5.09 9.31 5.06 10.41 5.06L12 5C16.19 5 18.8 5.16 19.83 5.44C20.73 5.69 21.31 6.27 21.56 7.17Z"
+                />
+              </svg>
+            </a>
+            <a href="/">
+              <svg
+                class="footerLogo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M17.5481 1.00458L14.6699 1C11.4362 1 9.34653 3.12509 9.34653 6.41423V8.91055H6.45258C6.20251 8.91055 6 9.1115 6 9.35937V12.9763C6 13.2241 6.20274 13.4249 6.45258 13.4249H9.34653V22.5514C9.34653 22.7993 9.54904 23 9.79911 23H13.5749C13.825 23 14.0275 22.799 14.0275 22.5514V13.4249H17.4112C17.6613 13.4249 17.8638 13.2241 17.8638 12.9763L17.8652 9.35937C17.8652 9.24036 17.8174 9.12638 17.7326 9.04215C17.6479 8.95793 17.5324 8.91055 17.4123 8.91055H14.0275V6.79439C14.0275 5.77727 14.272 5.26094 15.6087 5.26094L17.5477 5.26025C17.7975 5.26025 18 5.0593 18 4.81166V1.45317C18 1.20576 17.7977 1.00504 17.5481 1.00458Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <a href="/">Політика конфіденційності</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobileMenuWrapper">
+      <div class="mobileWrapperList">
+        <div class="mobileMenuHeader">
+          <a class="logo" href="./index.html">
+            <svg
+              class="companyLogo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 168 20"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_808_877)">
+                <path d="M8.22995 11.3789H0V19.6614H8.22995V11.3789Z" />
+                <path d="M25.2369 0.335938H0V8.38955H25.2369V0.335938Z" />
+                <path d="M25.2373 11.3789H11.2031V19.6614H25.2373V11.3789Z" />
+                <path
+                  d="M63.5289 18.7425C63.0925 19.1301 62.8589 19.3116 62.6807 19.4415C62.6028 19.5198 62.527 19.5714 62.4758 19.5961H56.3008C56.5323 19.4147 56.8417 19.1817 57.2002 18.8703C57.8169 18.3528 58.7696 17.5755 60.1074 16.4373C58.3332 14.5734 57.8947 12.1652 57.8947 10.3012V9.52393C57.8947 5.6662 59.798 -0.00390625 70.6545 -0.00390625H71.6584C74.6435 -0.00390625 76.9074 0.410527 78.6817 1.1095C79.0668 0.82496 79.2471 0.616712 79.4274 0.488877C79.5053 0.410527 79.5811 0.35898 79.6323 0.334238H85.7807C85.7028 0.412589 84.6743 1.18785 82.1789 3.33836C83.9532 5.20228 84.4162 7.55898 84.4162 9.52599V10.3033C84.4162 14.0827 82.6153 19.9342 71.6564 19.9342H70.6525C67.6428 19.9342 65.3011 19.4683 63.5268 18.7425H63.5289ZM65.8706 11.959L73.7175 5.56517C73.0741 5.46207 72.2505 5.38372 71.1442 5.38372C66.3337 5.38372 65.5367 7.92187 65.5367 9.68063V9.94042C65.5367 10.6394 65.6391 11.3116 65.8706 11.959ZM76.7517 9.94042V9.68063C76.7517 8.98166 76.6739 8.33424 76.5202 7.78991L68.6734 14.159C69.2901 14.2621 70.0624 14.3136 71.1688 14.3136C75.9015 14.3136 76.7517 11.7507 76.7517 9.93836V9.94042Z"
+                />
+                <path
+                  d="M33.2031 6.54625V0.335938H56.6658V6.54625H48.9828V19.5978H40.8983V6.54625H33.2031Z"
+                />
+                <path d="M136.384 0.335938H128.537V19.5978H136.384V0.335938Z" />
+                <path
+                  d="M108.959 0.335938L106.309 15.4225H105.342L102.693 0.335938H87.3828V19.5978H95.1067V4.51326H96.3995L99.0486 19.5978H112.603L115.252 4.51326H116.559V19.5978H124.283V0.335938H108.959Z"
+                />
+                <path
+                  d="M160.141 0.335938V15.4225H158.838L155.871 0.335938H140.637V19.5978H148.361V4.51326H149.666L152.634 19.5978H167.865V0.335938H160.141Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_808_877">
+                  <rect width="168" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <button class="menuClose">
+            <svg
+              class="closeBtn"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path d="M2 2L22 22" stroke-width="2" />
+              <path d="M22 2L2 22" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="modalTextContainer">
+          <div class="menuLists">
+            <ul class="mobileMenuContainer">
+              <li>
+                <a class="footerLink modalLink" href="./service.html"
+                  >Обслуговуюча компанія</a
+                >
+              </li>
+              <li>
+                <a class="footerLink modalLink" href="./agency.html"
+                  >Агенція нерухомості</a
+                >
+              </li>
+              <li>
+                <a class="footerLink modalLink" href="./repair.html">Ремонти</a>
+              </li>
+              <li>
+                <a class="footerLink modalLink" href="./tenders.html"
+                  >Тендери</a
+                >
+              </li>
+              <li>
+                <a class="footerLink modalLink" href="./team.html">Команда</a>
+              </li>
+              <li>
+                <a class="footerLink modalLink" href="/blog.html">Блог</a>
+              </li>
+              <li>
+                <a class="footerLink modalLink" href="/contacts.html"
+                  >Контакти</a
+                >
+              </li>
+              <li>
+                <a class="footerLink modalLink" href="./developer.html"
+                  >Про забудовника</a
+                >
+              </li>
+            </ul>
+
+            <ul class="menuProjectList">
+              <li>
+                <a href="./project.html" class="menuProjectLink">
+                  <h3 class="menuProjectTitle">Utlandia</h3>
+                  <p class="menuProjectText">Ірпінь, вул.Чехова, 1в</p>
+                </a>
+              </li>
+              <li>
+                <a href="./project.html" class="menuProjectLink">
+                  <h3 class="menuProjectTitle">Utlandia 2</h3>
+                  <p class="menuProjectText">Ірпінь, вул.Українська, 1б</p>
+                </a>
+              </li>
+              <li>
+                <a href="./project.html" class="menuProjectLink">
+                  <h3 class="menuProjectTitle">Utlandia 2+</h3>
+                  <p class="menuProjectText">Ірпінь, вул.Українська, 1в</p>
+                </a>
+              </li>
+              <li>
+                <a href="./project.html" class="menuProjectLink">
+                  <h3 class="menuProjectTitle">Utlandia 3</h3>
+                  <p class="menuProjectText">Ірпінь, вул.Українська</p>
+                </a>
+              </li>
+              <li>
+                <a href="./project.html" class="menuProjectLink">
+                  <h3 class="menuProjectTitle">Utlandia 4</h3>
+                  <p class="menuProjectText">
+                    Гостомель, <br />вул. Назва Вулиці 23
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="./project.html" class="menuProjectLink">
+                  <h3 class="menuProjectTitle">Utlandia 5</h3>
+                  <p class="menuProjectText">
+                    Буча, <br />вул. Назва Вулиці 105
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobileMenuFooter">
+            <div class="footerAddressBox">
+              <p class="footerTitle">ВІДДІЛ ПРОДАЖІВ</p>
+            </div>
+
+            <div class="mobileMenuContacts">
+              <address>
+                <ul class="mobileFooterAddress">
+                  <li>
+                    <a class="mobileFooterLink" href="/"
+                      >м. Ірпінь, вул. Соборна, 1Г</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="mobileFooterLink" href="tel:+380557997899">
+                      38 (055) 799 78 99
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobileFooterLink" href="mailto:info@tomin.family">
+                      info@tomin.family
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobileFooterLink" href="tel:+380637997899">
+                      38 (063) 799 78 99
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="menuBtns">
+              <a href class="orangeButton orangeBtnMenu descHiden popupOpenBtn">
+                <span class="squareSpan"></span> ЗАПИС НА ПЕРЕГЛЯД
+              </a>
+              <div class="footerSocialLinks footerSocialLinksMenu">
+                <a href="/">
+                  <svg
+                    class="footerLogo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.9804 7.88005C21.9336 6.81738 21.7617 6.0868 21.5156 5.45374C21.2616 4.78176 20.8709 4.18014 20.359 3.68002C19.8589 3.1721 19.2533 2.77743 18.5891 2.52745C17.9524 2.28127 17.2256 2.10943 16.163 2.06257C15.0923 2.01175 14.7525 2 12.0371 2C9.32172 2 8.98185 2.01175 7.9152 2.05861C6.85253 2.10546 6.12195 2.27746 5.48904 2.52348C4.81692 2.77743 4.2153 3.16814 3.71517 3.68002C3.20726 4.18014 2.81274 4.78573 2.5626 5.44992C2.31643 6.0868 2.14458 6.81341 2.09773 7.87609C2.04691 8.9467 2.03516 9.28658 2.03516 12.002C2.03516 14.7173 2.04691 15.0572 2.09376 16.1239C2.14061 17.1865 2.31261 17.9171 2.55879 18.5502C2.81274 19.2221 3.20726 19.8238 3.71517 20.3239C4.2153 20.8318 4.82088 21.2265 5.48507 21.4765C6.12195 21.7226 6.84856 21.8945 7.91139 21.9413C8.97788 21.9883 9.31791 21.9999 12.0333 21.9999C14.7486 21.9999 15.0885 21.9883 16.1552 21.9413C17.2178 21.8945 17.9484 21.7226 18.5813 21.4765C19.9254 20.9568 20.9881 19.8941 21.5078 18.5502C21.7538 17.9133 21.9258 17.1865 21.9726 16.1239C22.0195 15.0572 22.0312 14.7173 22.0312 12.002C22.0312 9.28658 22.0273 8.9467 21.9804 7.88005ZM20.1794 16.0457C20.1364 17.0225 19.9723 17.5499 19.8355 17.9015C19.4995 18.7728 18.808 19.4643 17.9367 19.8004C17.585 19.9372 17.0538 20.1012 16.0808 20.1441C15.026 20.1911 14.7096 20.2027 12.0411 20.2027C9.37255 20.2027 9.0522 20.1911 8.00113 20.1441C7.02437 20.1012 6.49693 19.9372 6.1453 19.8004C5.71171 19.6402 5.31704 19.3862 4.9967 19.0541C4.6646 18.7298 4.41065 18.3391 4.2504 17.9055C4.11365 17.5539 3.94959 17.0225 3.9067 16.0497C3.8597 14.9948 3.8481 14.6783 3.8481 12.0097C3.8481 9.34122 3.8597 9.02087 3.9067 7.96995C3.94959 6.99319 4.11365 6.46575 4.2504 6.11412C4.41065 5.68038 4.6646 5.28586 5.00067 4.96536C5.32483 4.63327 5.71553 4.37931 6.14927 4.21921C6.5009 4.08247 7.03231 3.9184 8.00509 3.87537C9.05999 3.82851 9.37652 3.81676 12.0449 3.81676C14.7174 3.81676 15.0337 3.82851 16.0848 3.87537C17.0616 3.9184 17.589 4.08247 17.9406 4.21921C18.3742 4.37931 18.7689 4.63327 19.0892 4.96536C19.4213 5.28967 19.6753 5.68038 19.8355 6.11412C19.9723 6.46575 20.1364 6.99701 20.1794 7.96995C20.2262 9.02484 20.238 9.34122 20.238 12.0097C20.238 14.6783 20.2262 14.9908 20.1794 16.0457Z"
+                    />
+                    <path
+                      d="M12.0371 6.86423C9.20069 6.86423 6.89937 9.1654 6.89937 12.002C6.89937 14.8385 9.20069 17.1397 12.0371 17.1397C14.8736 17.1397 17.1748 14.8385 17.1748 12.002C17.1748 9.1654 14.8736 6.86423 12.0371 6.86423ZM12.0371 15.3347C10.197 15.3347 8.70438 13.8422 8.70438 12.002C8.70438 10.1617 10.197 8.66924 12.0371 8.66924C13.8774 8.66924 15.3698 10.1617 15.3698 12.002C15.3698 13.8422 13.8774 15.3347 12.0371 15.3347Z"
+                    />
+                    <path
+                      d="M18.5776 6.6611C18.5776 7.32346 18.0405 7.86053 17.378 7.86053C16.7156 7.86053 16.1785 7.32346 16.1785 6.6611C16.1785 5.99858 16.7156 5.46167 17.378 5.46167C18.0405 5.46167 18.5776 5.99858 18.5776 6.6611Z"
+                    />
+                  </svg>
+                </a>
+                <a href="/">
+                  <svg
+                    class="footerLogo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15L15.19 12L10 9V15ZM21.56 7.17C21.69 7.64 21.78 8.27 21.84 9.07C21.91 9.87 21.94 10.56 21.94 11.16L22 12C22 14.19 21.84 15.8 21.56 16.83C21.31 17.73 20.73 18.31 19.83 18.56C19.36 18.69 18.5 18.78 17.18 18.84C15.88 18.91 14.69 18.94 13.59 18.94L12 19C7.81 19 5.2 18.84 4.17 18.56C3.27 18.31 2.69 17.73 2.44 16.83C2.31 16.36 2.22 15.73 2.16 14.93C2.09 14.13 2.06 13.44 2.06 12.84L2 12C2 9.81 2.16 8.2 2.44 7.17C2.69 6.27 3.27 5.69 4.17 5.44C4.64 5.31 5.5 5.22 6.82 5.16C8.12 5.09 9.31 5.06 10.41 5.06L12 5C16.19 5 18.8 5.16 19.83 5.44C20.73 5.69 21.31 6.27 21.56 7.17Z"
+                    />
+                  </svg>
+                </a>
+                <a href="/">
+                  <svg
+                    class="footerLogo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.5481 1.00458L14.6699 1C11.4362 1 9.34653 3.12509 9.34653 6.41423V8.91055H6.45258C6.20251 8.91055 6 9.1115 6 9.35937V12.9763C6 13.2241 6.20274 13.4249 6.45258 13.4249H9.34653V22.5514C9.34653 22.7993 9.54904 23 9.79911 23H13.5749C13.825 23 14.0275 22.799 14.0275 22.5514V13.4249H17.4112C17.6613 13.4249 17.8638 13.2241 17.8638 12.9763L17.8652 9.35937C17.8652 9.24036 17.8174 9.12638 17.7326 9.04215C17.6479 8.95793 17.5324 8.91055 17.4123 8.91055H14.0275V6.79439C14.0275 5.77727 14.272 5.26094 15.6087 5.26094L17.5477 5.26025C17.7975 5.26025 18 5.0593 18 4.81166V1.45317C18 1.20576 17.7977 1.00504 17.5481 1.00458Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projectModalWrapper">
+      <ul class="projectModalList container">
+        <li class="projectModalItem">
+          <a href="./project.html" class="projectModalLink">
+            <picture>
+              <source
+                srcset="./images/projectModalImg/modalImgMob.jpg"
+                media="(max-width: 375px)"
+                class="projectImgModal"
+              />
+              <source
+                srcset="./images/projectModalImg/modalImgTab.jpg"
+                media="(max-width: 768px)"
+                class="projectImgModal"
+              />
+              <img
+                src="./images/projectModalImg/modalImgDesc.jpg"
+                class="projectImgModal"
+              />
+            </picture>
+            <div class="projectModalArrow">
+              <div class="projectModalTextBox">
+                <h3 class="projectModalTitle">Utlandia</h3>
+                <p class="projectModalText">Ірпінь,<br />вул.Чехова, 1в</p>
+              </div>
+              <button class="descVisible">
+                <svg
+                  class="arrRight"
+                  width="42"
+                  height="22"
+                  viewBox="0 0 42 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 11L41 11L31 21"
+                    stroke-width="2"
+                    stroke-linejoin="bevel"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+        </li>
+        <li class="projectModalItem">
+          <a href="./project.html" class="projectModalLink">
+            <picture>
+              <source
+                srcset="./images/projectModalImg/modalImgMob.jpg"
+                media="(max-width: 375px)"
+                class="projectImgModal"
+              />
+              <source
+                srcset="./images/projectModalImg/modalImgTab.jpg"
+                media="(max-width: 768px)"
+                class="projectImgModal"
+              />
+              <img
+                src="./images/projectModalImg/modalImgDesc.jpg"
+                class="projectImgModal"
+              />
+            </picture>
+            <div class="projectModalArrow">
+              <div class="projectModalTextBox">
+                <h3 class="projectModalTitle">Utlandia 2</h3>
+                <p class="projectModalText">Ірпінь,<br />вул.Українська, 1б</p>
+              </div>
+              <button class="descVisible">
+                <svg
+                  class="arrRight"
+                  width="42"
+                  height="22"
+                  viewBox="0 0 42 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 11L41 11L31 21"
+                    stroke-width="2"
+                    stroke-linejoin="bevel"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+        </li>
+        <li class="projectModalItem">
+          <a href="./project.html" class="projectModalLink">
+            <picture>
+              <source
+                srcset="./images/projectModalImg/modalImgMob.jpg"
+                media="(max-width: 375px)"
+                class="projectImgModal"
+              />
+              <source
+                srcset="./images/projectModalImg/modalImgTab.jpg"
+                media="(max-width: 768px)"
+                class="projectImgModal"
+              />
+              <img
+                src="./images/projectModalImg/modalImgDesc.jpg"
+                class="projectImgModal"
+              />
+            </picture>
+            <div class="projectModalArrow">
+              <div class="projectModalTextBox">
+                <h3 class="projectModalTitle">Utlandia 2+</h3>
+                <p class="projectModalText">Ірпінь,<br />вул.Українська, 1в</p>
+              </div>
+              <button class="descVisible">
+                <svg
+                  class="arrRight"
+                  width="42"
+                  height="22"
+                  viewBox="0 0 42 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 11L41 11L31 21"
+                    stroke-width="2"
+                    stroke-linejoin="bevel"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+        </li>
+        <li class="projectModalItem">
+          <a href="./project.html" class="projectModalLink">
+            <picture>
+              <source
+                srcset="./images/projectModalImg/modalImgMob.jpg"
+                media="(max-width: 375px)"
+                class="projectImgModal"
+              />
+              <source
+                srcset="./images/projectModalImg/modalImgTab.jpg"
+                media="(max-width: 768px)"
+                class="projectImgModal"
+              />
+              <img
+                src="./images/projectModalImg/modalImgDesc.jpg"
+                class="projectImgModal"
+              />
+            </picture>
+            <div class="projectModalArrow">
+              <div class="projectModalTextBox">
+                <h3 class="projectModalTitle">Utlandia 3</h3>
+                <p class="projectModalText">Ірпінь,<br />вул.Українська</p>
+              </div>
+              <button class="descVisible">
+                <svg
+                  class="arrRight"
+                  width="42"
+                  height="22"
+                  viewBox="0 0 42 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 11L41 11L31 21"
+                    stroke-width="2"
+                    stroke-linejoin="bevel"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+        </li>
+        <li class="projectModalItem">
+          <a href="./project.html" class="projectModalLink">
+            <picture>
+              <source
+                srcset="./images/projectModalImg/modalImgMob.jpg"
+                media="(max-width: 375px)"
+                class="projectImgModal"
+              />
+              <source
+                srcset="./images/projectModalImg/modalImgTab.jpg"
+                media="(max-width: 768px)"
+                class="projectImgModal"
+              />
+              <img
+                src="./images/projectModalImg/modalImgDesc.jpg"
+                class="projectImgModal"
+              />
+            </picture>
+            <div class="projectModalArrow">
+              <div class="projectModalTextBox">
+                <h3 class="projectModalTitle">Utlandia 4</h3>
+                <p class="projectModalText">
+                  Гостомель,<br />вул. Назва Вулиці 23
+                </p>
+              </div>
+              <button class="descVisible">
+                <svg
+                  class="arrRight"
+                  width="42"
+                  height="22"
+                  viewBox="0 0 42 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 11L41 11L31 21"
+                    stroke-width="2"
+                    stroke-linejoin="bevel"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+        </li>
+        <li class="projectModalItem">
+          <a href="./project.html" class="projectModalLink">
+            <picture>
+              <source
+                srcset="./images/projectModalImg/modalImgMob.jpg"
+                media="(max-width: 375px)"
+                class="projectImgModal"
+              />
+              <source
+                srcset="./images/projectModalImg/modalImgTab.jpg"
+                media="(max-width: 768px)"
+                class="projectImgModal"
+              />
+              <img
+                src="./images/projectModalImg/modalImgDesc.jpg"
+                class="projectImgModal"
+              />
+            </picture>
+            <div class="projectModalArrow">
+              <div class="projectModalTextBox">
+                <h3 class="projectModalTitle">Utlandia 5</h3>
+                <p class="projectModalText">Буча,<br />вул. Назва Вулиці 105</p>
+              </div>
+              <button class="descVisible">
+                <svg
+                  class="arrRight"
+                  width="42"
+                  height="22"
+                  viewBox="0 0 42 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 11L41 11L31 21"
+                    stroke-width="2"
+                    stroke-linejoin="bevel"
+                  />
+                </svg>
+              </button>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="popUpWrapper">
+      <div class="popUp withPaddings">
+        <svg
+          class="closePopupBtn"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 22 22"
+          fill="none"
+        >
+          <path d="M1 1L21 21M21 1L1 21" />
+        </svg>
+        <h3 class="popupTitle">Залишити заявку</h3>
+        <p class="popupText">
+          Залишайте свої контакти, а наші спеціалісти проконсультують вас по
+          всім питаннями
+        </p>
+        <div class="inputsContainer">
+          <div class="inputBox">
+            <input class="popupInput nameInput" placeholder="Ваше імʼя" />
+            <p class="errorName">Невірний формат імені</p>
+          </div>
+
+          <div class="inputBox">
+            <input
+              class="popupInput phoneInput"
+              inputmode="numeric"
+              placeholder="Ваш телефон"
+            />
+            <p class="errorPhone">Невірний формат телефону</p>
+          </div>
+        </div>
+
+        <button class="previewProjectBtn popupLink" disabled>
+          <span class="leftSpanBtn popupSpanLeft"></span>Залишити заявку<span
+            class="rightSpanBtn popupSpanRight"
+          ></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="thxWrapper">
+      <div class="thxPopup">
+        <svg
+          class="thxClosePopupBtn"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 22 22"
+          fill="none"
+        >
+          <path d="M1 1L21 21M21 1L1 21" />
+        </svg>
+        <h3 class="thxTitle">
+          Дякую,<br />
+          наші спеціалісти незабаром проконсультують вас по всім питаннями.
+        </h3>
+      </div>
+    </div>
+
+    <script src="./js/animation.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/blogPageSwiper.js" type="module"></script>
+    <script src="./js/projectModal.js" type="module"></script>
+    <script src="./js/mobileMenu.js" type="module"></script>
+    <script src="./js/phoneModal.js" type="module"></script>
+  </body>
+</html>

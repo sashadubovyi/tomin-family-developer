@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 29H16M11 55H16" stroke="#141414"/>
+<path d="M25 29H30M25 55H30" stroke="#141414"/>
+<path d="M39 29H44M39 55H44" stroke="#141414"/>
+<rect x="44" y="22" width="18" height="40" stroke="#141414" stroke-linejoin="bevel"/>
+<rect x="49" y="29" width="8" height="16" stroke="#141414" stroke-linejoin="bevel"/>
+<path d="M50 49H56" stroke="#141414" stroke-linejoin="bevel"/>
+<path d="M50 52H56" stroke="#141414" stroke-linejoin="bevel"/>
+<rect x="2" y="22" width="9" height="40" rx="4.5" stroke="#141414"/>
+<rect x="30" y="22" width="9" height="40" rx="4.5" stroke="#141414"/>
+<rect x="16" y="22" width="9" height="40" rx="4.5" stroke="#141414"/>
+<path d="M24.5237 16C25.7457 14.7436 27.3517 11.5846 24 9C20.6483 6.41538 22.2543 3.25641 23.4763 2" stroke="#141414"/>
+<path d="M32.5237 16C33.7457 14.7436 35.3517 11.5846 32 9C28.6483 6.41538 30.2543 3.25641 31.4763 2" stroke="#141414"/>
+<path d="M40.5237 16C41.7457 14.7436 43.3517 11.5846 40 9C36.6483 6.41538 38.2543 3.25641 39.4763 2" stroke="#141414"/>
+</svg>
